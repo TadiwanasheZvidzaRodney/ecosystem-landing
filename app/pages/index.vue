@@ -59,8 +59,10 @@ const projects = [
       
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         <UiAnimateOnScroll animation="fade-up" :duration="800">
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            The Infrastructure for<br />
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
+            <span class="block sm:inline">The Infrastructure</span>
+            <span class="block sm:inline"> for</span>
+            <br class="hidden sm:block" />
             <span class="text-slate">African Innovation</span>
           </h1>
         </UiAnimateOnScroll>
