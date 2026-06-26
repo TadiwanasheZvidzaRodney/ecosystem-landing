@@ -32,7 +32,7 @@ const socialLinks = [
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Brand -->
         <div class="col-span-1">
-          <h3 class="text-white font-bold text-xl mb-4">Ecosystem</h3>
+          <UiLogo :size="32" show-text class="mb-4" />
           <p class="text-slate text-sm leading-relaxed mb-4">
             The infrastructure for African innovation.
           </p>
@@ -91,7 +91,7 @@ const socialLinks = [
       <!-- Bottom Bar -->
       <div class="mt-12 pt-8 border-t border-black flex flex-col md:flex-row justify-between items-center">
         <p class="text-slate text-sm">
-          &copy; {{ new Date().getFullYear() }} Ecosystem. All rights reserved.
+          &copy; {{ new Date().getFullYear() }} Stratus. All rights reserved.
         </p>
         <div class="flex space-x-6 mt-4 md:mt-0">
           <a href="#" class="text-slate text-sm hover:text-white transition-colors">Privacy</a>

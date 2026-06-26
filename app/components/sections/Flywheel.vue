@@ -124,7 +124,7 @@ const setActive = (id: string | null) => {
         font-size="12"
         font-weight="bold"
       >
-        ECOSYSTEM
+        STRATUS
       </text>
       <text
         x="200"

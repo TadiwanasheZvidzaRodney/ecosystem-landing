@@ -40,8 +40,8 @@ onUnmounted(() => {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
-        <a href="/" class="text-white font-bold text-xl">
-          Ecosystem
+        <a href="/" class="flex items-center">
+          <UiLogo :size="36" show-text />
         </a>
 
         <!-- Desktop Navigation -->
