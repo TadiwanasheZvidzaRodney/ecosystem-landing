@@ -13,6 +13,17 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Enterprise consulting, open data, and community-driven innovation. Three pillars powering the next generation of African technology.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'theme-color', content: '#000000' },
+        // Open Graph / Facebook
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'Stratus - The Infrastructure for African Innovation' },
+        { property: 'og:description', content: 'Enterprise consulting, open data, and community-driven innovation. Three pillars powering the next generation of African technology.' },
+        { property: 'og:image', content: '/stratuslogo.png' },
+        { property: 'og:site_name', content: 'Stratus' },
+        // Twitter
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Stratus - The Infrastructure for African Innovation' },
+        { name: 'twitter:description', content: 'Enterprise consulting, open data, and community-driven innovation. Three pillars powering the next generation of African technology.' },
+        { name: 'twitter:image', content: '/stratuslogo.png' },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
