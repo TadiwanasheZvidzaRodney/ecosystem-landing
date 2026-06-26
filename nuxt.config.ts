@@ -19,7 +19,7 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://stratuslanding.vercel.app/' },
         { property: 'og:title', content: 'Stratus - The Infrastructure for African Innovation' },
         { property: 'og:description', content: 'Enterprise consulting, open data, and community-driven innovation. Three pillars powering the next generation of African technology.' },
-        { property: 'og:image', content: 'https://stratuslanding.vercel.app/stratuslogo.png' },
+        { property: 'og:image', content: 'https://stratuslanding.vercel.app/og-image.svg' },
         { property: 'og:image:width', content: '512' },
         { property: 'og:image:height', content: '512' },
         { property: 'og:site_name', content: 'Stratus' },
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Stratus - The Infrastructure for African Innovation' },
         { name: 'twitter:description', content: 'Enterprise consulting, open data, and community-driven innovation. Three pillars powering the next generation of African technology.' },
-        { name: 'twitter:image', content: 'https://stratuslanding.vercel.app/stratuslogo.png' },
+        { name: 'twitter:image', content: 'https://stratuslanding.vercel.app/og-image.svg' },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
