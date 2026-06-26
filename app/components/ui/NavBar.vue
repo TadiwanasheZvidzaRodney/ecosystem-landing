@@ -1,0 +1,70 @@
+<script setup lang="ts">
+import { Menu, X } from 'lucide-vue-next'
+
+const isMenuOpen = ref(false)
+
+const navLinks = [
+  { name: 'Enterprise', href: '#enterprise' },
+  { name: 'Data Hub', href: '#data-hub' },
+  { name: 'Innovation', href: '#innovation' },
+]
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+</script>
+
+<template>
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-charcoal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="/" class="text-white font-bold text-xl">
+          Ecosystem
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a
+            v-for="link in navLinks"
+            :key="link.name"
+            :href="link.href"
+            class="text-slate text-sm hover:text-white transition-colors"
+          >
+            {{ link.name }}
+          </a>
+          <UiGhostButton>Contact</UiGhostButton>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden text-white"
+          @click="toggleMenu"
+          :aria-label="isMenuOpen ? 'Close menu' : 'Open menu'"
+        >
+          <Menu v-if="!isMenuOpen" :size="24" />
+          <X v-else :size="24" />
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div
+        v-if="isMenuOpen"
+        class="md:hidden py-4 border-t border-charcoal"
+      >
+        <div class="flex flex-col space-y-4">
+          <a
+            v-for="link in navLinks"
+            :key="link.name"
+            :href="link.href"
+            class="text-slate text-sm hover:text-white transition-colors"
+            @click="isMenuOpen = false"
+          >
+            {{ link.name }}
+          </a>
+          <UiGhostButton class="w-full">Contact</UiGhostButton>
+        </div>
+      </div>
+    </div>
+  </nav>
+</template>
