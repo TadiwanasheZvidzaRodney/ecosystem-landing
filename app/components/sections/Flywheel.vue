@@ -72,8 +72,7 @@ const setActive = (id: string | null) => {
         stroke="#A1A1AA"
         stroke-width="2"
         stroke-dasharray="20 10"
-        class="animate-spin-slow origin-center"
-        style="animation: spin 30s linear infinite;"
+        class="animate-spin-slow"
       />
 
       <!-- Connection arrows -->
@@ -190,21 +189,21 @@ const setActive = (id: string | null) => {
     >
       {{ conn.label }}
     </div>
-
-    <!-- Keyframe animation for spinning ring -->
-    <style scoped>
-      @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      .animate-spin-slow {
-        transform-origin: center;
-        transform-box: fill-box;
-      }
-    </style>
   </div>
 </template>
+
+<style scoped>
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: spin 30s linear infinite;
+}
+</style>
