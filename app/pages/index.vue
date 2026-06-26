@@ -82,6 +82,25 @@ const projects = [
       </div>
     </section>
 
+    <!-- Flywheel Section -->
+    <section id="flywheel" class="py-20 bg-charcoal">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <UiSectionHeading
+          title="The Flywheel Effect"
+          subtitle="Each pillar strengthens the others, creating a self-reinforcing cycle of growth and innovation."
+          centered
+          class="mb-16"
+        />
+        
+        <SectionsFlywheel />
+        
+        <p class="text-center text-slate text-sm mt-12 max-w-xl mx-auto">
+          Enterprise consulting funds data initiatives. Open data powers community projects. 
+          Successful projects attract more enterprise clients. The cycle accelerates.
+        </p>
+      </div>
+    </section>
+
     <!-- Pillars Section -->
     <section id="pillars" class="py-20 bg-black">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

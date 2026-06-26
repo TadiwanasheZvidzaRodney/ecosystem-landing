@@ -4,9 +4,9 @@ import { Menu, X } from 'lucide-vue-next'
 const isMenuOpen = ref(false)
 
 const navLinks = [
-  { name: 'Enterprise', href: '#enterprise' },
-  { name: 'Data Hub', href: '#data-hub' },
-  { name: 'Innovation', href: '#innovation' },
+  { name: 'How It Works', href: '#flywheel' },
+  { name: 'Solutions', href: '#pillars' },
+  { name: 'Projects', href: '#projects' },
 ]
 
 const toggleMenu = () => {
