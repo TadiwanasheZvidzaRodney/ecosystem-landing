@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    
+    .loading-container {
+      text-align: center;
+    }
+    
+    .logo {
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    .logo svg {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .brand-text {
+      color: #FAFAFA;
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 24px;
+      letter-spacing: -0.02em;
+    }
+    
+    .loading-bar {
+      width: 120px;
+      height: 2px;
+      background-color: #121212;
+      margin: 24px auto 0;
+      border-radius: 1px;
+      overflow: hidden;
+    }
+    
+    .loading-bar-inner {
+      width: 40%;
+      height: 100%;
+      background-color: #FAFAFA;
+      animation: loading 1.5s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    
+    @keyframes loading {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(350%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-container">
+    <div class="logo">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Bottom layer -->
+        <path d="M50 85 L15 65 L15 58 L50 78 L85 58 L85 65 Z" fill="#6B7280"/>
+        <!-- Middle layer -->
+        <path d="M50 65 L15 45 L15 38 L50 58 L85 38 L85 45 Z" fill="#9CA3AF"/>
+        <!-- Top layer -->
+        <path d="M50 45 L15 25 L15 18 L50 38 L85 18 L85 25 Z" fill="#D1D5DB"/>
+        <!-- Highlight -->
+        <path d="M50 45 L15 25 L15 18 L50 38 L85 18 L85 25 Z" fill="none" stroke="#FAFAFA" stroke-width="1" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="brand-text">Stratus</div>
+    <div class="loading-bar">
+      <div class="loading-bar-inner"></div>
+    </div>
+  </div>
+</body>
+</html>

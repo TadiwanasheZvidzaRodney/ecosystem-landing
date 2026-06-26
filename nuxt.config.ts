@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
   },
+  spaLoadingTemplate: true,
   app: {
     head: {
       title: 'Stratus - The Infrastructure for African Innovation',
@@ -15,15 +16,18 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#000000' },
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://stratuslanding.vercel.app/' },
         { property: 'og:title', content: 'Stratus - The Infrastructure for African Innovation' },
         { property: 'og:description', content: 'Enterprise consulting, open data, and community-driven innovation. Three pillars powering the next generation of African technology.' },
-        { property: 'og:image', content: '/stratuslogo.png' },
+        { property: 'og:image', content: 'https://stratuslanding.vercel.app/stratuslogo.png' },
+        { property: 'og:image:width', content: '512' },
+        { property: 'og:image:height', content: '512' },
         { property: 'og:site_name', content: 'Stratus' },
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Stratus - The Infrastructure for African Innovation' },
         { name: 'twitter:description', content: 'Enterprise consulting, open data, and community-driven innovation. Three pillars powering the next generation of African technology.' },
-        { name: 'twitter:image', content: '/stratuslogo.png' },
+        { name: 'twitter:image', content: 'https://stratuslanding.vercel.app/stratuslogo.png' },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
